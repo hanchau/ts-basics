@@ -112,3 +112,29 @@ const car: Car = {
 };
 
 console.log(car)
+
+
+// 10. Interfaces -- similar to type aliases but only apply to "Object Types"
+
+interface Rectangle {
+    height: number,
+    width: number
+}
+
+const rectangle: Rectangle = {
+    height: 10,
+    width: 20
+}
+console.log(rectangle)
+
+interface ColoredRectangle extends Rectangle {
+    color: string
+}
+
+const coloredRectangle: ColoredRectangle = {
+    height: 20,
+    width: 10,
+    color: "red"
+};
+console.log(coloredRectangle)
+
